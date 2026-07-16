@@ -1,0 +1,21 @@
+Bar bar/Bar.qml
+LeftSection bar/LeftSection.qml
+CenterSection bar/CenterSection.qml
+RightSection bar/RightSection.qml
+LauncherIcon bar/widgets/LauncherIcon.qml
+WorkspacesWidget bar/widgets/WorkspacesWidget.qml
+ClockWidget bar/widgets/ClockWidget.qml
+VolumeWidget bar/widgets/VolumeWidget.qml
+BatteryWidget bar/widgets/BatteryWidget.qml
+TrayWidget bar/widgets/TrayWidget.qml
+MediaWidget bar/widgets/MediaWidget.qml
+PowerButton bar/widgets/PowerButton.qml
+Launcher panels/Launcher.qml
+ControlCenter panels/ControlCenter.qml
+ControlButton panels/ControlButton.qml
+NotificationPanel panels/NotificationPanel.qml
+OSD osd/OSD.qml
+singleton ThemeService singletons/ThemeService.qml
+singleton WallpaperService singletons/WallpaperService.qml
+singleton SystemTrayModel singletons/SystemTrayModel.qml
+singleton HyprlandIPC singletons/HyprlandIPC.qml
