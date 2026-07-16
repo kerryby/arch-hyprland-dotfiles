@@ -44,7 +44,6 @@
 
 - **Full Lua-based Hyprland configuration** — modular, clean, and maintainable
 - **Noctalia theme** — warm, dark, cohesive color scheme across all apps
-- **Caelestia Shell integration** — seamless theming engine
 - **Blazing fast terminal** — Alacritty + Fish with custom theme
 - **Minimal Neovim** — lightweight Lua config with Matugen integration
 
