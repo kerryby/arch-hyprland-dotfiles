@@ -1,8 +1,10 @@
------------------------
----- LOOK AND FEEL ----
------------------------
+-- ==============================================================
+-- 7. ОФОРМЛЕНИЕ (LOOK AND FEEL / DECORATION)
+-- Отступы, границы, скругления, прозрачность, тени, размытие
+-- ==============================================================
 
--- Refer to https://wiki.hypr.land/Configuring/Basics/Variables/
+require("noctalia").apply_theme()
+
 hl.config({
     general = {
         gaps_in  = 8,
@@ -15,10 +17,7 @@ hl.config({
             inactive_border = "rgba(59595940)",
         },
 
-        -- Set to true to enable resizing windows by clicking and dragging on borders and gaps
         resize_on_border = false,
-
-        -- Please see https://wiki.hypr.land/Configuring/Advanced-and-Cool/Tearing/ before you turn this on
         allow_tearing = false,
 
         layout = "dwindle",
@@ -28,7 +27,6 @@ hl.config({
         rounding       = 7,
         rounding_power = 3,
 
-        -- Change transparency of focused and unfocused windows
         active_opacity   = 0.9,
         inactive_opacity = 0.7,
 
@@ -43,8 +41,8 @@ hl.config({
             enabled   = false,
             size      = 2,
             passes    = 3,
-	    vibrancy = 0.14,
-	    new_optimizations = true
+            vibrancy = 0.14,
+            new_optimizations = true
         },
     },
 
@@ -53,15 +51,15 @@ hl.config({
     },
 })
 
--- Default curves and animations, see https://wiki.hypr.land/Configuring/Advanced-and-Cool/Animations/
 hl.curve("easeOutQuint",   { type = "bezier", points = { {0.23, 1},    {0.32, 1}    } })
 hl.curve("easeInOutCubic", { type = "bezier", points = { {0.65, 0.05}, {0.36, 1}    } })
 hl.curve("linear",         { type = "bezier", points = { {0, 0},       {1, 1}       } })
 hl.curve("almostLinear",   { type = "bezier", points = { {0.5, 0.5},   {0.75, 1}    } })
 hl.curve("quick",          { type = "bezier", points = { {0.15, 0},    {0.1, 1}     } })
 hl.curve("custom",	   { type = "bezier", points = { {0, 0.6},     {0.5, 1}     } })
--- Default springs
 hl.curve("easy",           { type = "spring", mass = 2, stiffness = 50, dampening = 50 })
+
+
 
 hl.animation({ leaf = "global",        enabled = true,  speed = 10,   bezier = "default" })
 hl.animation({ leaf = "border",        enabled = true,  speed = 10,   bezier = "easeOutQuint" })
@@ -81,30 +79,3 @@ hl.animation({ leaf = "workspacesIn",  enabled = true,  speed = 9,    bezier = "
 hl.animation({ leaf = "workspacesOut", enabled = true,  speed = 9,    bezier = "custom", style = "slidefade 60%" })
 hl.animation({ leaf = "zoomFactor",    enabled = true,  speed = 7,    bezier = "quick" })
 
--- Ref https://wiki.hypr.land/Configuring/Basics/Workspace-Rules/
-hl.window_rule({
-	name = "no-gaps-f1",
-	match = {float = false, workspace = "f[1]" },
-	border_size = 0,
-	rounding     = 0,
-})
--- See https://wiki.hypr.land/Configuring/Layouts/Dwindle-Layout/ for more
-hl.config({
-    dwindle = {
-        preserve_split = true, -- You probably want this
-    },
-})
-
--- See https://wiki.hypr.land/Configuring/Layouts/Master-Layout/ for more
-hl.config({
-    master = {
-        new_status = "master",
-    },
-})
-
--- See https://wiki.hypr.land/Configuring/Layouts/Scrolling-Layout/ for more
-hl.config({
-    scrolling = {
-        fullscreen_on_one_column = true,
-    },
-})

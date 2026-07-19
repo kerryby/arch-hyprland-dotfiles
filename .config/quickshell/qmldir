@@ -1,0 +1,11 @@
+Bar 1.0 modules/Bar.qml
+BarButton 1.0 modules/BarButton.qml
+MainMenu 1.0 modules/MainMenu.qml
+SubMenu 1.0 modules/SubMenu.qml
+Launcher 1.0 modules/Launcher.qml
+LockScreen 1.0 modules/LockScreen.qml
+Wallpaper 1.0 modules/Wallpaper.qml
+SystemRow 1.0 modules/SystemRow.qml
+ActionButton 1.0 modules/ActionButton.qml
+singleton Theme Theme.qml
+WalColors 1.0 WalColors.qml

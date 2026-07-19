@@ -1,6 +1,7 @@
----------------
----- INPUT ----
----------------
+-- ==============================================================
+-- 3. ВВОД (INPUT)
+-- Настройка клавиатуры, мыши, тачпада и жестов
+-- ==============================================================
 
 hl.config({
     input = {
@@ -27,9 +28,9 @@ hl.gesture({
     action = "workspace"
 })
 
--- Example per-device config
--- See https://wiki.hypr.land/Configuring/Advanced-and-Cool/Devices/ for more
 hl.device({
     name        = "epic-mouse-v1",
     sensitivity = -0.5,
 })
+
+
