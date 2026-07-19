@@ -43,7 +43,7 @@ Item {
 
     Process {
         id: wallProc
-        command: ["bash", "-c", "noctalia msg wallpaper-get 2>/dev/null || ls /home/kerry/Pictures/wallpapers/*.{jpg,png,jpeg} 2>/dev/null | head -1"]
+        command: ["bash", "-c", "ls /home/kerry/Pictures/wallpapers/*.{jpg,png,jpeg} 2>/dev/null | head -1"]
         stdout: StdioCollector {
             id: wallStdout
         }
@@ -59,7 +59,7 @@ Item {
 
     Process {
         id: schemeProc
-        command: ["bash", "-c", "grep 'background' /home/kerry/.config/hypr/scheme/current.lua 2>/dev/null | grep -oP '\\\"[0-9a-fA-F]+\\\"' | tr -d '\"'; grep 'background' /home/kerry/.config/noctalia/settings.json 2>/dev/null | grep -oP '\"[^\"]*\"' | tail -1 | tr -d '\"'"]
+        command: ["bash", "-c", "grep 'background' /home/kerry/.config/hypr/scheme/current.lua 2>/dev/null | grep -oP '\\\"[0-9a-fA-F]+\\\"' | tr -d '\"'"]
         stdout: StdioCollector {
             onDataChanged: {
                 var v = text.trim()

@@ -10,5 +10,3 @@ require("modules.optimization")
 require("modules.permissions")
 require("modules.window-rule")
 
--- For Noctalia Color templates
-require("noctalia").apply_theme()

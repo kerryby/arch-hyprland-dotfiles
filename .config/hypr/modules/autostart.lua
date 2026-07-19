@@ -5,7 +5,7 @@
 
 hl.on("hyprland.start", function ()
    hl.exec_cmd("awww-daemon")
-   hl.exec_cmd("noctalia")
+
    hl.exec_cmd("hyprctl setcursor AOSP-cursors 16")
 
    hl.exec_cmd("[workspace 1 silent] /home/kerry/Applications/YandexMusic.AppImage")

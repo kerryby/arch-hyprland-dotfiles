@@ -5,7 +5,7 @@
 
 local terminal    = "alacritty"
 local fileManager = "nautilus"
-local menu        = "noctalia msg panel-toggle launcher"
+local menu        = "qs ipc call qs toggleLauncher"
 local browser     = "google-chrome-stable"
 
 local mainMod = "SUPER"
