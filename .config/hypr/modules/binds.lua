@@ -4,7 +4,7 @@
 -- ==============================================================
 
 local terminal    = "alacritty"
-local fileManager = "nautilus"
+local fileManager = "thunar"
 local menu        = "qs ipc call qs toggleLauncher"
 local browser     = "google-chrome-stable"
 
@@ -17,7 +17,7 @@ hl.bind(mainMod .. " + Q", hl.dsp.exec_cmd(terminal))
 local closeWindowBind = hl.bind(mainMod .. " + C", hl.dsp.window.close())
 
 -- Выход из Hyprland
-hl.bind(mainMod .. " + M", hl.dsp.exec_cmd("hyprctl dispatch exit"))
+hl.bind(mainMod .. " + M", hl.dsp.exec_cmd("exit"))
 
 -- Файловый менеджер
 hl.bind(mainMod .. " + E", hl.dsp.exec_cmd(fileManager))
@@ -25,20 +25,17 @@ hl.bind(mainMod .. " + E", hl.dsp.exec_cmd(fileManager))
 -- Переключение плавающего режима окна
 hl.bind(mainMod .. " + V", hl.dsp.window.float({ action = "toggle" }))
 
+-- Rofi
+hl.bind(mainMod .. " + P", hl.dsp.exec_cmd("rofi -show drun"))
+
 -- Лаунчер Quickshell
 hl.bind(mainMod .. " + R", hl.dsp.exec_cmd("qs ipc call qs toggleLauncher"))
 
 -- Блокировка Quickshell
-hl.bind(mainMod .. " + L", hl.dsp.exec_cmd("qs ipc call qs toggleLock"))
+hl.bind(mainMod .. " + L", hl.dsp.exec_cmd(""))
 
 -- Обои Quickshell
 hl.bind(mainMod .. " + A", hl.dsp.exec_cmd("qs ipc call qs toggleWallpaper"))
-
--- Псевдо-раскладка (dwindle only)
-hl.bind(mainMod .. " + P", hl.dsp.window.pseudo())
-
--- Переключение режима разделения (dwindle only)
-hl.bind(mainMod .. " + J", hl.dsp.layout("togglesplit"))
 
 -- Браузер
 hl.bind(mainMod .. " + W", hl.dsp.exec_cmd(browser))
@@ -51,6 +48,9 @@ hl.bind(mainMod .. " + F12", hl.dsp.exec_cmd("warp-cli connect"))
 
 -- Cloudflare WARP: отключение
 hl.bind(mainMod .. " + F11", hl.dsp.exec_cmd("warp-cli disconnect"))
+
+-- Ручная смена темы (pywal)
+hl.bind(mainMod .. " + T", hl.dsp.exec_cmd("~/.config/hypr/theme/switch.sh"))
 
 -- Фокус по стрелкам
 hl.bind(mainMod .. " + left",  hl.dsp.focus({ direction = "left" }))

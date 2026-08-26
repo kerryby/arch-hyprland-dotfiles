@@ -3,10 +3,7 @@
 require("modules.autostart")
 require("modules.binds")
 require("modules.decoration")
-require("modules.EV")
 require("modules.input")
 require("modules.monitors")
 require("modules.optimization")
-require("modules.permissions")
-require("modules.window-rule")
 

@@ -12,10 +12,10 @@
   "display": {
     "separator": "  ",
     "color": {
-      "keys": "32",
-      "title": "91",
-      "output": "97",
-      "separator": "90"
+      "keys": "#6267A3",
+      "title": "#A88DB3",
+      "output": "#e3c9cd",
+      "separator": "#9e8c8f"
     },
     "key": {
       "type": "string"
@@ -30,45 +30,45 @@
   "modules": [
     {
       "type": "custom",
-      "format": "\u001b[32m╭──────────────────── User ──────────────────────╮\u001b[0m"
+      "format": "╭──────────────────── User ──────────────────────╮"
     },
     {
       "type": "title",
-      "key": "│  User",
+      "key": "│  User",
       "format": "{1}",
-      "keyColor": "32",
+      "keyColor": "#6267A3",
       "fqdn": false,
       "color": {
-        "user": "91",
-        "at": "90",
-        "host": "91"
+        "user": "#A88DB3",
+        "at": "#9e8c8f",
+        "host": "#A88DB3"
       }
     },
     {
       "type": "os",
-      "key": "│  OS",
-      "keyColor": "32"
+      "key": "│  OS",
+      "keyColor": "#6267A3"
     },
     {
       "type": "custom",
-      "format": "\u001b[32m╰────────────────────────────────────────────────╯\u001b[0m"
+      "format": "╰────────────────────────────────────────────────╯"
     },
     "break",
     {
       "type": "custom",
-      "format": "\u001b[32m╭──────────────────── System ────────────────────╮\u001b[0m"
+      "format": "╭──────────────────── System ────────────────────╮"
     },
     {
       "type": "cpu",
-      "key": "│  CPU",
-      "keyColor": "32",
+      "key": "│  CPU",
+      "keyColor": "#6267A3",
       "temp": false,
       "showPeCoreCount": true
     },
     {
       "type": "memory",
-      "key": "│  Memory",
-      "keyColor": "32",
+      "key": "│  Memory",
+      "keyColor": "#6267A3",
       "percent": {
         "green": 50,
         "yellow": 80,
@@ -77,8 +77,8 @@
     },
     {
       "type": "disk",
-      "key": "│  Disk",
-      "keyColor": "32",
+      "key": "│  Disk",
+      "keyColor": "#6267A3",
       "folders": "/",
       "useAvailable": false,
       "percent": {
@@ -89,118 +89,118 @@
     },
     {
       "type": "display",
-      "key": "│ 󰍹 Display",
-      "keyColor": "32",
+      "key": "│  Display",
+      "keyColor": "#6267A3",
       "compactType": "none",
       "preciseRefreshRate": false
     },
     {
       "type": "wm",
-      "key": "│  WM",
-      "keyColor": "32",
+      "key": "│  WM",
+      "keyColor": "#6267A3",
       "detectPlugin": true
     },
     {
       "type": "custom",
-      "format": "\u001b[32m╰────────────────────────────────────────────────╯\u001b[0m"
+      "format": "╰────────────────────────────────────────────────╯"
     },
     "break",
     {
       "type": "custom",
-      "format": "\u001b[32m╭─────────────────── Sensors ───────────────────╮\u001b[0m"
+      "format": "╭─────────────────── Sensors ───────────────────╮"
     },
     {
       "type": "command",
-      "key": "│  Load",
-      "keyColor": "32",
+      "key": "│  Load",
+      "keyColor": "#6267A3",
       "text": "top -bn2 -d 0.2 2>/dev/null | grep 'Cpu(s)' | tail -1 | awk '{printf \"%.1f%%\\n\", $2+$4}'"
     },
     {
       "type": "command",
-      "key": "│  Temp",
-      "keyColor": "32",
+      "key": "│  Temp",
+      "keyColor": "#6267A3",
       "text": "cat /sys/class/thermal/thermal_zone0/temp 2>/dev/null | awk '{printf \"%.0f°C\\n\", $1/1000}' || echo 'N/A'"
     },
     {
       "type": "custom",
-      "format": "\u001b[32m╰────────────────────────────────────────────────╯\u001b[0m"
+      "format": "╰────────────────────────────────────────────────╯"
     },
     "break",
     {
       "type": "custom",
-      "format": "\u001b[32m╭─────────────────── Terminal ───────────────────╮\u001b[0m"
+      "format": "╭─────────────────── Terminal ───────────────────╮"
     },
     {
       "type": "terminal",
-      "key": "│  Terminal",
-      "keyColor": "32"
+      "key": "│  Terminal",
+      "keyColor": "#6267A3"
     },
     {
       "type": "shell",
-      "key": "│  Shell",
-      "keyColor": "32"
+      "key": "│  Shell",
+      "keyColor": "#6267A3"
     },
     {
       "type": "editor",
-      "key": "│  Editor",
-      "keyColor": "32"
+      "key": "│  Editor",
+      "keyColor": "#6267A3"
     },
     {
       "type": "command",
-      "key": "│ 󰏗 Updates",
-      "keyColor": "32",
+      "key": "│  Updates",
+      "keyColor": "#6267A3",
       "text": "echo \"$(pacman -Qu 2>/dev/null | wc -l) pkgs\""
     },
     {
       "type": "custom",
-      "format": "\u001b[32m╰────────────────────────────────────────────────╯\u001b[0m"
+      "format": "╰────────────────────────────────────────────────╯"
     },
     "break",
     {
       "type": "custom",
-      "format": "\u001b[32m╭───────────────── System Time ──────────────────╮\u001b[0m"
+      "format": "╭───────────────── System Time ──────────────────╮"
     },
     {
       "type": "uptime",
-      "key": "│  Uptime",
-      "keyColor": "32"
+      "key": "│  Uptime",
+      "keyColor": "#6267A3"
     },
     {
       "type": "command",
-      "key": "│ 󱦟 Age",
-      "keyColor": "32",
+      "key": "│  Age",
+      "keyColor": "#6267A3",
       "text": "echo $(( ($(date +%s) - $(stat -c %W /)) / 86400 )) days"
     },
     {
       "type": "custom",
-      "format": "\u001b[32m╰────────────────────────────────────────────────╯\u001b[0m"
+      "format": "╰────────────────────────────────────────────────╯"
     },
     "break",
     {
       "type": "custom",
-      "format": "\u001b[32m╭───────────────── Time Weather ─────────────────╮\u001b[0m"
+      "format": "╭───────────────── Time Weather ─────────────────╮"
     },
     {
       "type": "command",
-      "key": "│  Date",
-      "keyColor": "32",
+      "key": "│  Date",
+      "keyColor": "#6267A3",
       "text": "date +%F"
     },
     {
       "type": "command",
-      "key": "│  Time",
-      "keyColor": "32",
+      "key": "│  Time",
+      "keyColor": "#6267A3",
       "text": "date +%H:%M"
     },
     {
       "type": "command",
-      "key": "│  Weather",
-      "keyColor": "32",
+      "key": "│  Weather",
+      "keyColor": "#6267A3",
       "text": "curl -s 'wttr.in/?format=%t+%C' 2>/dev/null || echo 'N/A'"
     },
     {
       "type": "custom",
-      "format": "\u001b[32m╰────────────────────────────────────────────────╯\u001b[0m"
+      "format": "╰────────────────────────────────────────────────╯"
     }
   ]
 }

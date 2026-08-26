@@ -5,7 +5,7 @@
 
 hl.config({
     general = {
-        gaps_in  = 8,
+        gaps_in  = 10,
         gaps_out = 10,
 
         border_size = 2,
@@ -22,7 +22,7 @@ hl.config({
     },
 
     decoration = {
-        rounding       = 7,
+        rounding       = 17,
         rounding_power = 3,
 
         active_opacity   = 0.9,
@@ -55,7 +55,7 @@ hl.curve("linear",         { type = "bezier", points = { {0, 0},       {1, 1}   
 hl.curve("almostLinear",   { type = "bezier", points = { {0.5, 0.5},   {0.75, 1}    } })
 hl.curve("quick",          { type = "bezier", points = { {0.15, 0},    {0.1, 1}     } })
 hl.curve("custom",	   { type = "bezier", points = { {0, 0.6},     {0.5, 1}     } })
-hl.curve("easy",           { type = "spring", mass = 2, stiffness = 50, dampening = 50 })
+hl.curve("easy",           { type = "spring", mass = 2, stiffness = 80, dampening = 20 })
 
 
 
@@ -74,6 +74,6 @@ hl.animation({ leaf = "fadeLayersIn",  enabled = true,  speed = 1,    bezier = "
 hl.animation({ leaf = "fadeLayersOut", enabled = true,  speed = 1,    bezier = "almostLinear" })
 hl.animation({ leaf = "workspaces",    enabled = true,  speed = 1,    bezier = "almostLinear", style = "slide" })
 hl.animation({ leaf = "workspacesIn",  enabled = true,  speed = 9,    bezier = "custom", style = "slidefade 60%" })
-hl.animation({ leaf = "workspacesOut", enabled = true,  speed = 9,    bezier = "custom", style = "slidefade 60%" })
+hl.animation({ leaf = "workspacesOut", enabled = true,  speed = 9,    bezier = "custom", style = "slidefaded 60%" })
 hl.animation({ leaf = "zoomFactor",    enabled = true,  speed = 7,    bezier = "quick" })
 

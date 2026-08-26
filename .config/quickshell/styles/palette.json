@@ -1,0 +1,13 @@
+{
+  "bgTop":        "#111529",
+  "bgBottom":     "#111529",
+  "surface":      "#e3c9cd",
+  "text":         "#e3c9cd",
+  "textDim":      "#9e8c8f",
+  "accent":       "#9471A0",
+  "accent2":      "#A88DB3",
+  "green":        "#6267A3",
+  "yellow":       "#8475A2",
+  "red":          "#4B5590",
+  "outline":      "#9e8c8f"
+}

@@ -1,4 +1,4 @@
-source /usr/share/cachyos-fish-config/cachyos-config.fish
+#source /usr/share/cachyos-fish-config/cachyos-config.fish
 
 # overwrite greeting
 # potentially disabling fastfetch
@@ -8,3 +8,6 @@ source /usr/share/cachyos-fish-config/cachyos-config.fish
 
 # opencode
 fish_add_path /home/kerry/.opencode/bin
+
+
+fastfetch
